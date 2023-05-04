@@ -1,0 +1,319 @@
+//20_ABRIL_2023
+
+
+Algoritmo ingresarNotas
+	Definir nota como Entero
+	
+	Escribir "Ingrese una nota valida"
+	leer nota
+	
+	Mientras nota < 0 o nota > 10
+		
+		Escribir "Nota incorrecta, ingrese una nota valida"
+		leer nota
+		
+	FinMientras
+		
+		
+		Escribir "La nota es correcta"
+		
+FinAlgoritmo
+
+
+
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+
+//Diseña un programa que guarde una vocal secreta en una variable, debemos pedirle al usuario
+//que intente adivinar la vocal secreta, e intentará tantas veces como sea necesario hasta que la
+//adivine.
+
+	Algoritmo vocalSecreta
+		Definir vocal, vocalElegir Como Caracter
+		vocal= 'e'
+		
+		vocal = Mayusculas(vocal)
+
+		Escribir "Ingrese una vocal"
+		Leer vocalElecta
+		
+		Mientras vocalElecta <> vocal
+			
+			Escribir "La vocal es incorrecta, vuelva a intentarlo"
+			Leer vocalElecta
+			
+		FinMientras
+		
+		Escribir "La vocal es correcta"
+		
+FinAlgoritmo
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+//Copia y pega este código en tu programa. Deberás corregir los errores hasta lograr el siguiente
+//resultado esperado:
+
+
+//Algoritmo Correccion_Mientras
+//Definir num Como Entero
+//El programa ingresará números mientras sean PARES
+//Escribir "Ingrese un número"
+//Leer num
+//Mientras num 2 == 0 Hacer
+//Escribir "Ingrese otro número"
+
+//FinAlgoritmo
+
+Algoritmo Correccion_Mientras
+	Definir num Como Entero
+	//El programa ingresará números mientras sean PARES
+	Escribir "Ingrese un número"
+	Leer num
+	
+	Mientras num % 2 == 0
+		
+		Escribir "Ingrese otro número"
+		leer num
+		
+	FinMientras
+		
+FinAlgoritmo
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+
+Algoritmo ingresarNotasDos
+	Definir nota como Entero
+	
+	Hacer 
+		
+		Escribir "Ingrese una nota valida"
+		leer nota
+		
+	Mientras Que nota < 0 o nota > 10
+	
+	Escribir "La nota es correcta"
+	
+FinAlgoritmo
+
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+//Vamos a hacer nuevamente el ejercicio de la vocal misteriosa, pero esta vez con una estructura
+//Hacer-Mientras. ¿Puedes notar cual es la diferencia entre ambas estructuras?
+
+Algoritmo vocalSecretaDos
+	Definir vocal, vocalElegir Como Caracter
+	vocal = Mayusculas(vocal)
+	vocal= 'e'
+	
+	Hacer 
+		Escribir "Ingrese una vocal"
+		Leer vocalElecta
+	
+	Mientras que vocalElecta <> vocal
+	
+	Escribir "La vocal es correcta"
+	
+FinAlgoritmo
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+//Copia y pega este código en tu programa. Deberás corregir los errores hasta lograr el siguiente
+//resultado esperado:
+
+//Algoritmo Correccion_HacerMientras
+//num Como Entero
+//Repet
+//Escribir "Ingrese un número PAR"
+//Leer num
+//Mientras Qe num MOD 2 0
+//FinAlgoritmo
+
+Algoritmo CorreccionErrores
+	Definir num Como Entero
+	//El programa ingresará números mientras sean PARES
+	Escribir "Ingrese un número"
+	Leer num
+	
+	Hacer
+		
+		Escribir "Ingrese un número"
+		leer num
+		
+	Mientras que num % 2 == 0
+	
+	Escribir "Numero incorrecto"
+	
+FinAlgoritmo
+
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+
+//Escribir una estructura PARA que le solicite al usuario varios números y al finalizar muestre el
+//mayor número ingresado.
+
+
+Algoritmo EjemploPara
+	Definir i, nume, mayorn Como Entero
+	
+	mayorn= 0
+	
+	Para i <- 1 Hasta 4 Con Paso 1 Hacer
+		
+		Escribir "Ingrese un numero"
+		leer nume
+		
+		si mayorn < nume Entonces
+			mayorn= nume
+		FinSi
+	Fin Para
+	
+	Escribir "El numero mayor es: " mayorn
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+	
+FinAlgoritmo
+
+//3_MAYO_2023
+
+Algoritmo numeroMayor
+	Definir num1 Como Entero	
+	Escribir "ingrese un numero"
+	Leer num1
+	Mientras num1 > 10
+		Escribir " ingrese el numero nuevamente"
+		Leer num1
+
+	FinMientras
+	
+	Escribir "el numero es" num1
+	
+	
+FinAlgoritmo
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+	
+
+Algoritmo numeroEnteros
+	Definir num1, num2, num3, num, contador Como Entero
+	Escribir "ingrese un numero minimo: "
+	Leer num1
+	
+	Escribir " ingrese un numero maximo: "
+	Leer num2
+	
+	Escribir "ingrese un dentro de ese intervalo: "
+	Leer num
+	contador=0
+	
+	Mientras num>= num1 y num <= num2  Hacer
+		Escribir "ingrese otro numero: "
+		Leer num
+		contador=contador+1
+		
+	FinMientras
+	
+	Escribir "La Cantidad de numeros escritos fue: " contador 
+		
+		
+FinAlgoritmo
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+Algoritmo numeroEnteros
+	Definir num1, num2, num3 Como Real
+	Escribir "ingrese un numero decimal"
+	Leer num1
+	Escribir "Ingrese otro numero decimal"
+	Leer num2
+	
+	Mientras num2 > num1 Hacer
+		Escribir "ingrese otro numero"
+		Leer num3
+		
+		
+	FinMientras
+	Escribir " el numero ingresado es" num1
+		
+FinAlgoritmo
+
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+Algoritmo Calificaciones
+	Definir nombre, respuesta Como Caracter
+	Definir nota1, nota2, nota3 Como Entero
+	Definir resultado Como Real
+	
+		Escribir "Ingrese el nombre del alumno"
+		leer nombre
+		Mientras  nombre <> "" Hacer
+			
+            Escribir "Ingrese las calificaciones que obtuvo en las partes prácticas/problemas/teorica"
+            Escribir "Ingrese la nota en práctica"
+            leer nota1
+            si nota1 >= 0 y nota1 <= 10 Entonces
+                Escribir "Ingrese la nota de problemas"
+                leer nota2
+            SiNo
+                Escribir "Ha ingresado un valor erroneo"
+            FinSi
+			si nota2 >= 0 y nota2 <= 10 Entonces
+				Escribir "Ingrese la nota de teorico"
+				leer nota3
+			SiNo
+				Escribir "Ha ingresado un valor erroneo"
+				
+			FinSi
+			
+			si nota3 >= 0 y nota3 <= 10 Entonces
+				Escribir "El nombre del alumno es " nombre
+				Escribir "Su nota en práctica es " nota1
+				Escribir "Su nota en problemas es " nota2
+				Escribir "Su nota en teorico es " nota3
+				
+				resultado = (nota1*0.10)+(nota2*0.50)+(nota3*0.40)
+				
+				Escribir "Su nota final es de " resultado
+				
+				Escribir "Ingrese nombre del alumno"
+				leer nombre
+				
+			SiNo
+				Escribir "Ha ingresado una nota erronea"
+			FinSi
+		FinMientras
+		
+FinAlgoritmo
+**********************************************************************************************************************************
+**********************************************************************************************************************************
+
+Algoritmo contador_digitos
+	Definir num, contador Como Entero
+	Escribir " Digite un numero"
+	Leer num
+	contador=0
+	Mientras num >=1 Hacer
+		num=trunc(num/10)
+		contador=contador+1
+	FinMientras
+	Escribir " el numero tiene " contador  " digitos " 
+	
+FinAlgoritmo
